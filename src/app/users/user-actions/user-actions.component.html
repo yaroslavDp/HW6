@@ -1,0 +1,18 @@
+<mat-toolbar class="actions__toolbar">
+    <mat-toolbar-row>
+        <div class="actions__container">
+            <div class="actions__btns">
+                <button mat-button (click)="selectAll()"><span class="btn__text">{{isSelectedAll ? 'Deselect All' : 'Select All'}}</span></button>
+                <button mat-button (click)="deleteSelected()" [disabled] ="selectedUsers !== 0 ? null: true"><span [ngClass]="{'btn__text': selectedUsers !== 0}">Delete</span></button>
+                <button mat-button (click)="sort()"><span class="btn__text">Sort by Surname <i *ngIf="sortOrder === 'desc'" class="fa fa-long-arrow-down" aria-hidden="true"></i>
+                    <i *ngIf="sortOrder === 'asc'" class="fa fa-long-arrow-up" aria-hidden="true"></i></span>
+                </button>
+            </div>
+            <div class="actions__search">
+                <div class="input__field">
+                    <input class="input" type="text" placeholder="Search users" [(ngModel)]="searchQuery" (ngModelChange)="search()">
+                </div>
+            </div>
+        </div>
+    </mat-toolbar-row>
+  </mat-toolbar>

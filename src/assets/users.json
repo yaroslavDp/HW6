@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "firstname": "Leanne",
+        "lastname": "Bret",
+        "email": "Sincere@april.biz",
+        "phone": "1-770-736-8031 x56442"
+    },
+    {
+        "id": 2,
+        "firstname": "Estevan",
+        "lastname": "McGilvra",
+        "email": "emcgilvra0@wikimedia.org",
+        "phone": "1-150-417-0934 x56442"
+    },
+    {
+        "id": 3,
+        "firstname": "Darrick",
+        "lastname": "Daintry",
+        "email": "ddaintry1@irs.gov",
+        "phone": "1-344-426-7836 x56442"
+    },
+    {
+        "id": 4,
+        "firstname": "Torey",
+        "lastname": "Alves",
+        "email": "talves2@fastcompany.com",
+        "phone": "1-591-299-8443 x56442"
+    },
+    {
+        "id": 5,
+        "firstname": "Aundrea",
+        "lastname": "Clough",
+        "email": "aclough3@paginegialle.it",
+        "phone": "1-504-698-4846 x56442"
+    }
+]

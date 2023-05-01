@@ -1,0 +1,35 @@
+.actions__toolbar{
+    background-color: #fff;
+    border: 0.5px solid rgb(185, 185, 185);
+    border-top: none;
+}
+.actions__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+}
+.actions__btns{
+    display: flex;
+    justify-content: space-between;
+}
+.input__field{
+    width: 100%;
+}
+.btn__text {
+    color: #4279ac;
+}
+.input{
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  padding: 15px;
+  outline: none;
+  border-radius: 0.2rem;
+  background-color: #f0f8ff;
+  border: 0.5px solid rgb(185, 185, 185);
+  flex: 1 1 auto;
+  display: block;
+  transition: all 0.3s;
+
+}

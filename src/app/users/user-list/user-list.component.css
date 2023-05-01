@@ -1,0 +1,28 @@
+.mat-elevation-z0 {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
+    border-radius:0;
+}
+.card{
+    min-height: 380px;
+    border-right: 0.5px solid rgb(185, 185, 185);
+    border-bottom: 0.5px solid rgb(185, 185, 185);
+    position: relative;
+   
+}
+.card__content{
+    margin-top: 10px;
+}
+.card__check{
+    position: absolute;
+    padding: 15px;
+    top: 10px;
+    right: 10px;
+    height: 25px;
+    width: 25px;
+    border:0.5px solid rgb(185, 185, 185);
+    background-color: #eee;
+    z-index: 4;
+}
+.card__paragraph{
+    font-size: 14px;
+}

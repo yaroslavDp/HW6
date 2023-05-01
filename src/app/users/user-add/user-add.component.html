@@ -1,0 +1,30 @@
+<div class="add__container">
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+        <div class="add__fields">
+            <mat-form-field  appearance="fill">
+                <mat-label class="label">First Name</mat-label>
+                <input matInput formControlName="firstname">
+                <mat-error class="error" *ngIf="userForm.controls['firstname'].invalid">First name must be longer than 2 chars</mat-error>
+            </mat-form-field>
+            
+            <mat-form-field appearance="fill">
+                <mat-label class="label">Last Name</mat-label>
+                <input class="label" matInput formControlName="lastname">
+                <mat-error class="error" *ngIf="userForm.controls['lastname'].invalid">Last name must be between 2 and 60 chars</mat-error>
+            </mat-form-field>
+            
+            <mat-form-field appearance="fill">
+                <mat-label class="label">Email</mat-label>
+                <input matInput formControlName="email">
+                <mat-error class="error" *ngIf="userForm.controls['email'].invalid">Email must be of email type</mat-error>
+            </mat-form-field>
+            
+            <mat-form-field appearance="fill">
+                <mat-label class="label">Phone</mat-label>
+                <input matInput formControlName="phone">
+                <mat-error class="error" *ngIf="userForm.controls['phone'].invalid">Phone must be only numeric numbers</mat-error>
+            </mat-form-field>
+            <button mat-raised-button class="primary" type="submit">Add User</button>
+        </div>
+    </form>
+</div>

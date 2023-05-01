@@ -1,0 +1,23 @@
+<div class="content">
+    <div fxLayout="row wrap">
+      <div class="card__wrapper" fxFlex="20%" *ngFor="let user of userList | filterByName: searchQuery">
+        <mat-card class="card mat-elevation-z0">
+            <input class="card__check" type="checkbox" [checked]="user.checked" (change)="selectCard(user)" />
+            
+              <img mat-card-image src="https://media.istockphoto.com/id/494711330/photo/latin-young-man-in-a-studio.jpg?s=612x612&w=0&k=20&c=GAnGe6i43pLhhPPomrFF7aohc2uGsWGk1N2EHzLyJJw="
+              alt="User_male">
+              <mat-card-content class="card__content">
+                <p class="card__paragraph">
+                  {{user.firstname }} {{user.lastname}}
+                </p>
+                <p class="card__paragraph">
+                  Email: {{user.email}}
+                </p>
+                <p class="card__paragraph">
+                    Telephone: {{user.phone}}
+                </p>
+              </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+</div>
